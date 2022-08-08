@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-        <title>VR Aerial Simulator</title>
+        <title>Babylon.js sample code</title>
 
         <!-- Babylon.js -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js"></script>
@@ -60,8 +60,8 @@
             var camera = new BABYLON.Camera("camera1", BABYLON.Vector3.Zero(), scene);
         
             // Async call
-            BABYLON.SceneLoader.Append("https://www.babylonjs.com/Scenes/Mansion/",
-                "Mansion.babylon", scene, async function  () {
+            BABYLON.SceneLoader.Append("https://raw.githubusercontent.com/japatric/sim-truck-view/main/Unit with aluminum_body.glb",
+                "Unit with aluminum_body", scene, async function  () {
                     var xr = await scene.createDefaultXRExperienceAsync({floorMeshes: [scene.getMeshByName("Allée")]});
                 });
         
