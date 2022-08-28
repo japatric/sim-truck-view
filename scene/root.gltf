@@ -1,0 +1,697 @@
+{
+  "asset": {
+    "generator": "Amazon Sumerian",
+    "version": "2.0"
+  },
+  "cameras": [
+    {
+      "name": "Default Camera",
+      "type": "perspective",
+      "perspective": {
+        "aspectRatio": 1,
+        "yfov": 0.7853981633974483,
+        "zfar": 1000,
+        "znear": 1
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Default Camera",
+      "camera": 0,
+      "rotation": [
+        -0.044146548954312796,
+        -0.8485045798556502,
+        -0.07169833584581542,
+        0.5224465607278428
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "translation": [
+        -12.987969283671756,
+        5.460700550134267,
+        -9.536991251270825
+      ]
+    },
+    {
+      "name": "Box",
+      "mesh": 0,
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "translation": [
+        0,
+        0.5,
+        0
+      ]
+    },
+    {
+      "name": "Cylinder",
+      "mesh": 1,
+      "rotation": [
+        0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "translation": [
+        2,
+        0.5,
+        0
+      ]
+    },
+    {
+      "name": "Sphere",
+      "mesh": 2,
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "translation": [
+        -2,
+        0.5,
+        0
+      ]
+    },
+    {
+      "name": "Light",
+      "extensions": {
+        "KHR_lights_punctual": {
+          "light": 0
+        }
+      },
+      "rotation": [
+        -0.9063077918979041,
+        0,
+        0,
+        0.4226182513157061
+      ],
+      "scale": [
+        1.000000020109771,
+        1.000000020109771,
+        1.000000020109771
+      ],
+      "translation": [
+        0.03543337062001228,
+        8.625953674316406,
+        -7.998776912689209
+      ]
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 804,
+      "uri": "Box-textureModeUniform.bin"
+    },
+    {
+      "byteLength": 2368,
+      "uri": "Cylinder-radialSamples16-radius0_5.bin"
+    },
+    {
+      "byteLength": 17920,
+      "uri": "Sphere-radialSamples24-radius0_5-textureModeProjected-zSamples16.bin"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 36,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 36,
+      "byteLength": 288,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 324,
+      "byteLength": 288,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 612,
+      "byteLength": 192,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 0,
+      "byteLength": 192,
+      "target": 34963
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 192,
+      "byteLength": 816,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 1008,
+      "byteLength": 816,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 1824,
+      "byteLength": 544,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "buffer": 2,
+      "byteOffset": 0,
+      "byteLength": 4320,
+      "target": 34963
+    },
+    {
+      "buffer": 2,
+      "byteOffset": 4320,
+      "byteLength": 5100,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 2,
+      "byteOffset": 9420,
+      "byteLength": 5100,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 2,
+      "byteOffset": 14520,
+      "byteLength": 3400,
+      "byteStride": 8,
+      "target": 34962
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "byteOffset": 0,
+      "componentType": 5121,
+      "count": 36,
+      "max": [
+        23
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "min": [
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        1,
+        1
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 4,
+      "byteOffset": 0,
+      "componentType": 5121,
+      "count": 192,
+      "max": [
+        67
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 5,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 68,
+      "max": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "min": [
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 6,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 68,
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 7,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 68,
+      "max": [
+        1,
+        1
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 8,
+      "byteOffset": 0,
+      "componentType": 5123,
+      "count": 2160,
+      "max": [
+        423
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 9,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 425,
+      "max": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "min": [
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 10,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 425,
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 11,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 425,
+      "max": [
+        1,
+        1
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Box",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 1,
+            "NORMAL": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 0,
+          "mode": 4,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "Cylinder",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 5,
+            "NORMAL": 6,
+            "TEXCOORD_0": 7
+          },
+          "indices": 4,
+          "mode": 4,
+          "material": 1
+        }
+      ]
+    },
+    {
+      "name": "Sphere",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 9,
+            "NORMAL": 10,
+            "TEXCOORD_0": 11
+          },
+          "indices": 8,
+          "mode": 4,
+          "material": 2
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "uri": "Tile_Teal_DIFF.jpg"
+    },
+    {
+      "uri": "Tile_Teal_ROUGH_Roughness.jpg"
+    },
+    {
+      "uri": "Tile_Teal_NORM.jpg"
+    },
+    {
+      "uri": "Tile_Arc_DIFF.jpg"
+    },
+    {
+      "uri": "Tile_Arc_ROUGH_Roughness.jpg"
+    },
+    {
+      "uri": "Tile_Arc_NORM.jpg"
+    },
+    {
+      "uri": "Tile_Octo_DIFF.jpg"
+    },
+    {
+      "uri": "Tile_Octo_ROUGH_Roughness.jpg"
+    },
+    {
+      "uri": "Tile_Octo_NORM.jpg"
+    }
+  ],
+  "samplers": [
+    {
+      "name": "Tile_Teal_DIFF.jpg",
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    },
+    {
+      "name": "Tile_Teal_ROUGH_Roughness.jpg",
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    },
+    {
+      "name": "Tile_Teal_NORM.jpg",
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    },
+    {
+      "name": "Tile_Arc_DIFF.jpg",
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    },
+    {
+      "name": "Tile_Arc_ROUGH_Roughness.jpg",
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    },
+    {
+      "name": "Tile_Arc_NORM.jpg",
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    },
+    {
+      "name": "Tile_Octo_DIFF.jpg",
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    },
+    {
+      "name": "Tile_Octo_ROUGH_Roughness.jpg",
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    },
+    {
+      "name": "Tile_Octo_NORM.jpg",
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "name": "Tile_Teal_DIFF.jpg",
+      "source": 0,
+      "sampler": 0
+    },
+    {
+      "name": "Tile_Teal_ROUGH_Roughness.jpg",
+      "source": 1,
+      "sampler": 1
+    },
+    {
+      "name": "Tile_Teal_NORM.jpg",
+      "source": 2,
+      "sampler": 2
+    },
+    {
+      "name": "Tile_Arc_DIFF.jpg",
+      "source": 3,
+      "sampler": 3
+    },
+    {
+      "name": "Tile_Arc_ROUGH_Roughness.jpg",
+      "source": 4,
+      "sampler": 4
+    },
+    {
+      "name": "Tile_Arc_NORM.jpg",
+      "source": 5,
+      "sampler": 5
+    },
+    {
+      "name": "Tile_Octo_DIFF.jpg",
+      "source": 6,
+      "sampler": 6
+    },
+    {
+      "name": "Tile_Octo_ROUGH_Roughness.jpg",
+      "source": 7,
+      "sampler": 7
+    },
+    {
+      "name": "Tile_Octo_NORM.jpg",
+      "source": 8,
+      "sampler": 8
+    }
+  ],
+  "materials": [
+    {
+      "name": "Tile_Teal_MAT",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.82625,
+          0.82625,
+          0.82625,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1,
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      },
+      "normalTexture": {
+        "index": 2
+      }
+    },
+    {
+      "name": "Tile_Arc_MAT",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.6729166666666666,
+          0.6729166666666666,
+          0.6729166666666666,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1,
+        "baseColorTexture": {
+          "index": 3
+        },
+        "metallicRoughnessTexture": {
+          "index": 4
+        }
+      },
+      "normalTexture": {
+        "index": 5
+      }
+    },
+    {
+      "name": "Tile_Octo_MAT",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.36624999999999996,
+          0.36624999999999996,
+          0.36624999999999996,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1,
+        "baseColorTexture": {
+          "index": 6
+        },
+        "metallicRoughnessTexture": {
+          "index": 7
+        }
+      },
+      "normalTexture": {
+        "index": 8
+      }
+    }
+  ],
+  "extensions": {
+    "KHR_lights_punctual": {
+      "lights": [
+        {
+          "name": "Light",
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "intensity": 2,
+          "type": "directional"
+        }
+      ]
+    }
+  },
+  "extensionsUsed": [
+    "KHR_lights_punctual"
+  ],
+  "scenes": [
+    {
+      "name": "VR Aerial Simulator",
+      "nodes": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "scene": 0
+}
