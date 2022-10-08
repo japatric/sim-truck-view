@@ -1,47 +1,52 @@
-<html>
- <head>
- <title>My first three.js app</title>
- <style>
- body { margin: 0; }
- canvas { display: block; }
- </style>
- </head>
- <body>
- <script src="https://cdn.jsdelivr.net/npm/three@0.114.0/build/three.min.js"></
-script>
- <script type='module'>
- import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.114.0/
-examples/jsm/loaders/GLTFLoader.js';
- import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.114.0/
-examples/jsm/controls/OrbitControls.js';
- var loader = new GLTFLoader();
- loader.load(
- '/scene/root.gltf', gltf => {
- var scene = new THREE.Scene();
- scene.background = new THREE.Color('gray');
- scene.add(gltf.scene);
- var camera = gltf.cameras[0];
- if(!camera){
- camera = new THREE.PerspectiveCamera( 75, window.innerWidth/
-window.innerHeight, 0.1, 1000 );
- scene.add( camera );
- }
- var renderer = new THREE.WebGLRenderer(); 
- renderer.setSize( window.innerWidth, window.innerHeight );
- document.body.appendChild( renderer.domElement );
- var controls = new OrbitControls( camera, renderer.domElement );
- var animate = function () {
- requestAnimationFrame( animate );
- controls.update();
- renderer.render( scene, camera );
- };
- animate();
-// Watch for browser/canvas resize events
- window.addEventListener("resize", function () {
- renderer.setSize( window.innerWidth, window.innerHeight );
- });
- }
- );
- </script>
- </body>
-</html> 
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Earth and Moon</title>
+		<meta charset="utf-8">
+		<meta name="generator" content="Three.js Editor">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+			body {
+				font-family: sans-serif;
+				font-size: 11px;
+				background-color: #000;
+				margin: 0px;
+			}
+			canvas {
+				display: block;
+			}
+		</style>
+	</head>
+	<body ontouchstart="">
+		<script type="module">
+
+			import * as THREE from './js/three.module.js';
+			import { APP } from './js/app.js';
+			import { VRButton } from './js/VRButton.js';
+
+			window.THREE = THREE; // Used by APP Scripts.
+			window.VRButton = VRButton; // Used by APP Scripts.
+
+			var loader = new THREE.FileLoader();
+			loader.load( 'app.json', function ( text ) {
+
+				var player = new APP.Player();
+				player.load( JSON.parse( text ) );
+				player.setSize( window.innerWidth, window.innerHeight );
+				player.play();
+
+				document.body.appendChild( player.dom );
+
+				window.addEventListener( 'resize', function () {
+
+					player.setSize( window.innerWidth, window.innerHeight );
+
+				} );
+
+			} );
+
+
+
+		</script>
+	</body>
+</html>
